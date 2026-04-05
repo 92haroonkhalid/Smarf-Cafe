@@ -1,4 +1,5 @@
 ## File Structure
+```bash
 SmartCafe/
 ├── smartcafe/         # Replaces both 'src/' and 'include/'
 │   ├── __init__.py    # Makes this folder a recognizable Python module
