@@ -37,4 +37,4 @@ SmartCafe/
 ```
 
 ## Author 
-Haroon Khalid
+**Haroon Khalid**
