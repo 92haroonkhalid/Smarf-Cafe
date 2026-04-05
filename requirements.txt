@@ -1,0 +1,5 @@
+# SmartCafe dependencies (currently none, but ready for future)
+# You can add later:
+# rich
+# tabulate
+# pandas
