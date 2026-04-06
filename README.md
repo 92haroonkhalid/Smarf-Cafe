@@ -30,7 +30,9 @@ SmartCafe/
 ├── smartcafe/         # Replaces both 'src/' and 'include/'
 │   ├── __init__.py    # Makes this folder a recognizable Python module
 │   ├── main.py        # The entry point of your app
-│   └── core_logic.py  # Your classes and functions
+│   └── core_logic.py
+├── database/
+│   └── cafe_data.json  # Your classes and functions
 ├── requirements.txt   # Lists external dependencies
 ├── README.md
 └── .gitignore

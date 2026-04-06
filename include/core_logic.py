@@ -33,7 +33,7 @@ class OrderItem:
 
 
 class CafeManager:
-    def __init__(self, data_file: str = "cafe_data.json"):
+    def __init__(self, data_file: str = "Smart Cafe/database/cafe_data.json"):
         self.menu: List[MenuItem] = []
         self.orders: List[Dict] = []
         self.data_file = Path(data_file)
