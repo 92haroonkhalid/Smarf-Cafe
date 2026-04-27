@@ -38,6 +38,6 @@ SmartCafe/
 └── .gitignore
 ```
 
-## Author 
+## Author
 
 **Haroon Khalid**
