@@ -11,7 +11,7 @@ def display_menu(manager: CafeManager):
     for category, items in categories.items():
         print(f"\n{category.upper()}:")
         for item in items:
-            status = "✅ Available" if item.available else "❌ Unavailable"
+            status = "Available" if item.available else "Unavailable"
             print(f"  {item.id:2d}. {item.name:<25} Rs. {item.price:6.2f}  [{status}]")
     print("="*60)
 
@@ -81,7 +81,7 @@ def build_order(manager: CafeManager):
             try:
                 order = manager.create_order(current_order)
                 print("\n" + "✓" * 25)
-                print("           ORDER PLACED SUCCESSFULLY!")
+                print("ORDER PLACED SUCCESSFULLY!")
                 print("✓" * 25)
                 print(f"Order ID     : #{order['order_id']}")
                 print(f"Subtotal     : Rs. {order['subtotal']:.2f}")
@@ -125,7 +125,7 @@ def admin_menu(manager: CafeManager):
                 price = float(input("Price (Rs.): "))
                 category = input("Category: ").strip()
                 item = manager.add_menu_item(name, price, category)
-                print(f"✅ Added: {item.name} (ID: {item.id})")
+                print(f"Added: {item.name} (ID: {item.id})")
             except ValueError:
                 print("Invalid price!")
 
@@ -143,7 +143,7 @@ def admin_menu(manager: CafeManager):
                     price,
                     category if category else None
                 )
-                print("✅ Updated successfully!" if success else "❌ Item not found!")
+                print("Updated successfully!" if success else "Item not found!")
             except ValueError:
                 print("Invalid input!")
 
@@ -151,9 +151,9 @@ def admin_menu(manager: CafeManager):
             try:
                 item_id = int(input("Enter Item ID to remove: "))
                 if manager.remove_menu_item(item_id):
-                    print("✅ Item removed successfully!")
+                    print("Item removed successfully!")
                 else:
-                    print("❌ Item not found!")
+                    print("Item not found!")
             except ValueError:
                 print("Invalid ID!")
 
@@ -163,9 +163,9 @@ def admin_menu(manager: CafeManager):
                 status = input("Available? (y/n): ").strip().lower()
                 available = status == 'y'
                 if manager.update_availability(item_id, available):
-                    print(f"✅ Item availability updated to {'Available' if available else 'Unavailable'}")
+                    print(f"Item availability updated to {'Available' if available else 'Unavailable'}")
                 else:
-                    print("❌ Item not found!")
+                    print("Item not found!")
             except ValueError:
                 print("Invalid input!")
 
@@ -219,7 +219,7 @@ def main():
         elif choice == "3":
             display_menu(manager)
         elif choice == "4":
-            print("Thank you for using SmartCafe! Goodbye 👋")
+            print("Thank you for using SmartCafe! Goodbye!")
             break
         else:
             print("Invalid choice! Please try again.")
@@ -229,6 +229,6 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\nGoodbye! 👋")
+        print("\n\nGoodbye!")
     except Exception as e:
         print(f"\nUnexpected error: {e}")
