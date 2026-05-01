@@ -88,7 +88,7 @@ def build_order(manager: CafeManager):
                 print(f"Tax (5%)     : Rs. {order['tax']:.2f}")
                 print(f"Total Amount : Rs. {order['total']:.2f}")
                 print(f"Time         : {order['timestamp'][:19]}")
-                print("\nThank you for ordering at SmartCafe! ☕")
+                print("\nThank you for ordering at SmartCafe!")
                 return
             except ValueError as e:
                 print(f"Error: {e}")
