@@ -72,6 +72,9 @@ SmartCafe/
 │   ├── main.py                 # Application entry point (contains the menu loop)
 │   └── core_logic.py           # Core classes (MenuItem, Order, CafeManager)
 │
+├── Output Screenshots/
+│   └── README.md               # Output Screenshots
+│
 ├── database/                   # Data storage directory (auto-generated)
 │   └── cafe_data.json          # Order and revenue data (not tracked by git)
 │
