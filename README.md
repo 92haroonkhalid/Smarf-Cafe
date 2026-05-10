@@ -1,4 +1,4 @@
-# ☕ SmartCafe - Cafe Management System
+# SmartCafe - Cafe Management System
 
 <div align="center">
 
@@ -14,7 +14,7 @@ A clean, console-based cafe management system built with Python to streamline or
 
 ---
 
-## 📖 Overview
+## Overview
 
 **SmartCafe** is a Python-based application designed to manage the daily operations of a cafe efficiently. It provides a simple command-line interface for staff to:
 
@@ -27,18 +27,18 @@ The entire project follows an object-oriented design, making the code modular, r
 
 ---
 
-## ✨ Features
+## Features
 
-- **📋 Menu Management**: Pre-configured menu categories (Beverages, Food, Desserts, Snacks) with items and prices.
-- **🧾 Order Processing**: Take customer orders, automatically calculate totals, and store them.
-- **💾 Persistent Data Storage**: All order data and revenue are automatically saved in a JSON file (`database/cafe_data.json`) between sessions.
-- **📊 Revenue Tracking**: View total accumulated revenue at any time.
-- **🕒 Order History**: Review past orders directly within the application.
-- **🏗️ Object-Oriented Design**: Clean architecture using Python classes for `MenuItem`, `Order`, and `CafeManager`, promoting maintainability and scalability.
+- **Menu Management**: Pre-configured menu categories (Beverages, Food, Desserts, Snacks) with items and prices.
+- **Order Processing**: Take customer orders, automatically calculate totals, and store them.
+- **Persistent Data Storage**: All order data and revenue are automatically saved in a JSON file (`database/cafe_data.json`) between sessions.
+- **Revenue Tracking**: View total accumulated revenue at any time.
+- **Order History**: Review past orders directly within the application.
+- **Object-Oriented Design**: Clean architecture using Python classes for `MenuItem`, `Order`, and `CafeManager`, promoting maintainability and scalability.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Python 3.8 or higher** installed on your system. You can download it from [python.org](https://www.python.org/).
@@ -62,7 +62,7 @@ python -m smartcafe.main
 
 ---
 
-## 📁 File Structure
+## File Structure
 The project follows a modular and standard Python package structure.
 ```
 SmartCafe/
@@ -86,7 +86,7 @@ Note: The database/cafe_data.json file is automatically created when you first r
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 ### 1.Core Logic (smartcafe/core_logic.py):
 
 - Defines the foundational MenuItem class with name and price attributes.
@@ -103,7 +103,7 @@ Note: The database/cafe_data.json file is automatically created when you first r
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 - Language: Python 3
 
 - Data Storage: JSON
@@ -112,12 +112,10 @@ Note: The database/cafe_data.json file is automatically created when you first r
 
 ---
 
-## 👤 Author
+## Author
 Haroon Khalid
-
-GitHub: [@92haroonkhalid](https://github.com/92haroonkhalid)
 
 ---
 
-## 📄 License
+## License
 This project is open-source and available under the MIT License. See the ![License](https://img.shields.io/badge/license-MIT-green) file for more information (if added), or feel free to add one.
