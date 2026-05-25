@@ -114,6 +114,7 @@ Note: The database/cafe_data.json file is automatically created when you first r
 
 ## Author
 Haroon Khalid
+Atiqa Saleem
 
 ---
 
